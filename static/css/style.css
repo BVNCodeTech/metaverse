@@ -1,5 +1,244 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header{
+    border: 1px solid black;
+    background-image: url('/static/images/edited.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.head{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid white; */
+}
+
+.head .left{
+    width: 50%;
+    /* border: 1px solid white; */
+    height: 100%;
+}
+
+.head .mid{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1em;
+}
+
+.head .star-design{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 3em;
+    padding: 3em 0;
+    position: relative;
+    top: 25%;
+}
+
+    
+.head .star-design img{
+    width: 40%; 
+}
+.head .star-design .second, .head .star-design .third{
+    margin-left: -15%;
+}
+
+.head .text{
+    margin-bottom: 1em;
+}
+
+.head .text .title h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 3px solid white;
+}
+
+.head .text .subtitle{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    padding: 1em 0;
+    width: 70%;
+}
+
+.head .right{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border-left: 1px solid white; */
+}
+
+.head .right .top{
+    height: 10%;
+}
+
+
+.head .right .hamburger{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ham-line{
+    border: 1px solid white;
+    width: 40px;
+    margin: 4px 0;
+}
+
+.head .right .mid{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head ul{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .social-icons i{
+    font-size: 1.5em;
+}
+
+.head .bottom{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.design-line{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border: 2px solid var(--dark-blue);
+    width: 180px;
+}
+
+.design-line:nth-child(1){
+    border: 2px solid var(--red-orange);
+    width: 150px;
+    top: 40%;
+}
+
+.design-line:nth-child(3){
+    border: 2px solid var(--red-orange);
+    width: 250px;
+    top: 60%;
+}
+
+.head .text .read-more{
+    background-color: transparent;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 200px;
+    padding: 5px 30px;
+    margin: 1em 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    transition: all 500ms ease;
+}
+
+.menu.active{
+    right: 0;
+    transition: all 500ms ease;
+}
+
+.menu .container{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.menu .container ul{
+    height: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: initial;
+}
+
+.menu .container ul li a{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 4em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 24%);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.menu .container ul li a:before{
+    content: attr(data-text);
+    background: url('/static/images/wave.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-background-clip: text;
+    background-repeat: repeat-x;
+    animation: 1s linear water infinite;
+    width: 0;
+    overflow: hidden;
+    transition: 0.2s;
+    white-space: nowrap;
+}
+
+.menu .container ul li a:hover:before{
+    width: 100%;
+}
+
+@keyframes water{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 200px;
+    }
+}
+
+.menu.active .close-ham{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2em 4em;
+}
+
+.menu.active .close-ham-line:nth-child(1){
+    position: absolute;
+    transform: rotate(45deg);
+}
+.menu.active .close-ham-line:nth-child(2){
+    position: absolute;
+    transform: rotate(-45deg);
 }

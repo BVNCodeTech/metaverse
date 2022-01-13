@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------------- FONTS ------------------
+font-family: 'Abril Fatface', cursive;
+font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif; */
+
+:root{
+    --yellow: #ECA400;
+    --red-orange: #F05837;
+    --light-blue: #5EB7DF;
+    --blue: #006991;
+    --dull-blue: #183D5F;
+    --dark-blue: #051D41;
+}
+
+body{overflow-x: hidden;}
+li{list-style-type: none;}
+a{color: white;
+text-decoration: none;}
