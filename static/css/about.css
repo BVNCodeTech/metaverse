@@ -200,6 +200,76 @@ header .left .text .subtitle{
     color: var(--grey);
 }
 
+/* box-shadow: 0 20px 80px 0 rgb(0 0 0 / 45%) */
+/* ------------ WHO ARE WE -------------- */
+section{
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 20%;
+}
+
+.who .container, .what .container{
+    width: 80%;
+}
+
+.why .container{
+    margin-left: 20%;
+}
+
+section .title{
+    text-transform: uppercase;
+    color: var(--grey);
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 8em;
+    position: relative;
+    top: 5vh;
+    opacity: 0.9;
+}
+
+section .box{
+    box-shadow: 0 20px 80px 0 rgb(0 0 0 / 45%);
+    padding: 2em 1em;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+}
+
+section .text{
+    width: 60%;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: var(--grey);
+}
+
+section .img-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+section .img-container img{
+    width: 50%;
+}
+
+section p{
+    margin: 1em 0;
+}
+
+/* -------- Media Queries --------- */
+@media all and (max-height: 900px){
+    .right .content{height: 85%;}
+    .manual-nav{margin-bottom: 2em;}
+}
+
+@media all and (max-height: 700px){
+    .right .content{height: 95%;}
+}
+
 @media all and (max-width: 1100px){
     .closed-menu ul li:last-child{
         display: initial;
@@ -207,4 +277,61 @@ header .left .text .subtitle{
     .closed-menu ul li:not(:last-child){
         display: none;
     }
+}
+
+@media all and (max-width: 1000px){
+    .slider {
+        width: 280px;
+        height: 340px
+    }
+    .slider img{height: 50%;}
+    .slider .slide .text{padding: 2em 0;}
+    .left .text{font-size: 90%;}
+}
+
+
+@media all and (max-width: 800px){
+    header{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 15%;
+        position: relative;
+    }
+    header .left .text {
+        padding: 0;
+        text-align: center;
+    }
+    header .left .text .subtitle {
+        width: 100%;
+    }
+    header .left{height: auto;}
+    .right .content{
+        position: relative;
+        align-items: center;
+        height: auto;
+        margin-top: 3em;
+    }
+    .right .slide .title{margin: 0;}
+    .right .content .manual-nav{
+        margin: 0;
+        left: 0;
+        justify-content: start;
+    }
+}
+
+@media all and (max-width: 600px){
+    .right .slide .title {
+        font-size: 0.9em;
+        margin: 1em 0;
+    }
+    header .left .text .title{font-size: 3em;}
+    .social-links{padding: 1em;}
+    nav{padding: 0 30px;}
+    header .left {
+        width: 90%;
+    }
+    header{padding-bottom: 25%;}
+    .menu .container ul li a{font-size: 3em;}
 }
