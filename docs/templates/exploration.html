@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../static/css/parent.css">
+    <link rel="stylesheet" href="../static/css/exploration.css">
 </head>
+
 <body>
-    <model-viewer src="/static/images/vr headset.glb" alt="model robot" auto-rotate camera-controls ar ios-src="assets/Drossel.gltf"></model-viewer>
+    <nav>
+        <div class="logo">Logo</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="">Exploration</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Join</a></li>
+            <li>
+                <div class="hamburger">
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <div class="container">
+            <ul>
+                <li><a href="index.html" data-text="Home">Home</a></li>
+                <li><a href="#" data-text="About">About</a></li>
+                <li><a href="" data-text="Exploration">Exploration</a></li>
+                <li><a href="" data-text="Products">Products</a></li>
+                <li><a href="" data-text="FAQs">FAQs</a></li>
+                <li><a href="" data-text="Join">Join</a></li>
+            </ul>
+            <div class="close-ham">
+                <div class="close-ham-line ham-line"></div>
+                <div class="close-ham-line ham-line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="model-container">
+        <model-viewer src="../static/images/vr headset.glb" alt="model robot" auto-rotate camera-controls ar
+        ios-src="assets/Drossel.gltf"></model-viewer>
+    </div>
 </body>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="../static/js/main.js"></script>
 </html>
