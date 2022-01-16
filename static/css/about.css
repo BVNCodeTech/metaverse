@@ -240,7 +240,6 @@ section .box{
 }
 
 section .text{
-    width: 60%;
     font-family: 'Poppins';
     font-weight: bold;
     color: var(--grey);
@@ -270,6 +269,12 @@ section p{
     .right .content{height: 95%;}
 }
 
+@media all and (max-width: 1300px){
+    section .title{
+        font-size: 6em;
+    }
+}
+
 @media all and (max-width: 1100px){
     .closed-menu ul li:last-child{
         display: initial;
@@ -287,6 +292,11 @@ section p{
     .slider img{height: 50%;}
     .slider .slide .text{padding: 2em 0;}
     .left .text{font-size: 90%;}
+    section .title{
+        font-size: 5em;
+        top: 3vh;
+    }
+    section{padding: 5% 10%;}
 }
 
 
@@ -321,6 +331,17 @@ section p{
     }
 }
 
+@media all and (max-width: 700px){
+    section .title {
+        font-size: 3em;
+        top: 2vh;
+    }
+    section .text{
+        font-size: 90%;
+        font-weight: normal;
+    }
+}
+
 @media all and (max-width: 600px){
     .right .slide .title {
         font-size: 0.9em;
@@ -334,4 +355,14 @@ section p{
     }
     header{padding-bottom: 25%;}
     .menu .container ul li a{font-size: 3em;}
+}
+
+@media all and (max-width: 500px){
+    .why .container {
+        margin-left: 0%;
+    }
+    .who .container, .what .container{width: 100%;}
+    section {
+        padding: 10%;
+    }
 }
