@@ -104,7 +104,7 @@ text-decoration: none;}
 
 .menu .container ul li a:before{
     content: attr(data-text);
-    background: url('/static/images/wave.png');
+    background: url('../images/wave.png');
     position: absolute;
     top: 0;
     left: 0;

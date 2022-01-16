@@ -1,6 +1,6 @@
 header{
     border: 1px solid black;
-    background-image: url('/static/images/edited.png');
+    background-image: url('../images/edited.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
