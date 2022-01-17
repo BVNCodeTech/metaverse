@@ -14,14 +14,15 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Teko', sans-serif;*/
 
 :root{
-    --yellow: #ECA400;
+    --light: #dad5c7;
+    --light-blue: #5eb7dfa8;
+    --dull-blue: #6e6e8978;
+    --grey: #6e6d7a;
+
     --red-orange: #F05837;
-    --light-blue: #5EB7DF;
     --blue: #006991;
-    --dull-blue: #183D5F;
     --dark-blue: #051D41;
     --black: #121212;
-    --grey: #6e6d7a;
 }
 
 body{overflow-x: hidden;}

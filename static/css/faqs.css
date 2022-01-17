@@ -1,19 +1,115 @@
-body{overflow: hidden;}
+.header{position: relative;}
+
+.header{
+    background-color: #dad5c7;
+}
+
+.closed-menu ul li:last-child{
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 100px;
+    height: 20vh;
+    color: var(--grey);
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif; 
+    letter-spacing: 1px;
+}
+
+nav .closed-menu li a{
+    color: var(--grey);
+}
+
+nav .logo{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav .closed-menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .closed-menu ul li{
+    margin: 0 25px;
+}
+
+.hamburger .ham-line{
+    border: 1px solid var(--grey);
+}
+
+header{
+    min-height: 80vh;
+    display: flex;
+}
+
+header .left{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+header .left .text{
+    padding: 10% 20%;
+}
+
+header .left .text .title{
+    display: inline-block;
+    border-bottom: 5px solid var(--black);
+    border-top: 5px solid var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    text-transform: uppercase;
+    margin: 1em 0;
+    color: var(--black);
+}
+
+header .left .text .subtitle{
+    width: 90%;
+    color: var(--grey);
+    font-size: 1.2em;
+    font-family: 'Poppins';
+}
+
+.social-links{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em 4em;
+}
+
+.social-links ul{
+    display: flex;
+}
+
+.social-links .social-icons i{
+    margin: 0 10px;
+    font-size: 1.2em;
+    color: var(--grey);
+}
+
+/* ----------- Accordian ------------ */
 .right{
     height: 90%;
+    width: 40%;
     display: flex;
     justify-content: center;
 }
 
 .right .accordian{
     height: 100%;
-    padding: 10%;
+    padding: 5% 10%;
 }
 
 .right .accordian .accordian-item{
-    background-color: #bfbebe;
+    background-color: var(--light-blue);
     margin: 2em 0;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .right .accordian .accordian-item .top{
@@ -34,7 +130,7 @@ body{overflow: hidden;}
 }
 
 .right .accordian .accordian-item .bottom{
-    background-color: #6e6e8978;
+    background-color: var(--dull-blue);
     margin: 0 1em;
     border-left: 8px solid black;
     font-family: 'Poppins';
@@ -57,4 +153,39 @@ body{overflow: hidden;}
 }
 .right .accordian-item:target .top .fa-plus{
     display: none;
+}
+
+@media all and (max-width:1500px){
+    header .left .text .title{font-size: 3em;}
+    header .left, header .right{width: 50%;}
+}
+
+@media all and (max-width:1200px){
+    .right .accordian .accordian-item .top .title{font-size: 1.5em;}
+    .closed-menu ul li:last-child{
+        display: initial;
+    }
+    .closed-menu ul li:not(:last-child){
+        display: none;
+    }
+}
+
+@media all and (max-width: 950px){
+    .right .accordian .accordian-item{font-size: 90%;}
+}
+
+
+@media all and (max-width: 850px){
+    header{flex-direction: column;}
+    header .left, header .right{width: 100%;}
+    body{overflow-y: scroll;}
+    .right .accordian{padding: 5% 10% 20% 10%;}
+    header{
+        height: auto;
+    }
+}
+
+@media all and (max-width: 600px){
+    header .left .text{font-size: 80%;}
+    .menu .container ul li a{font-size: 3em;}
 }
