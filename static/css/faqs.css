@@ -1,0 +1,60 @@
+body{overflow: hidden;}
+.right{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.right .accordian{
+    height: 100%;
+    padding: 10%;
+}
+
+.right .accordian .accordian-item{
+    background-color: #bfbebe;
+    margin: 2em 0;
+    border-radius: 20px;
+}
+
+.right .accordian .accordian-item .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.right .accordian .accordian-item .top .title{
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    letter-spacing: 2px;
+    padding: 0 20px 0 0;
+}
+.right .accordian .accordian-item .top .fa-minus{
+    display: none;
+}
+
+.right .accordian .accordian-item .bottom{
+    background-color: #6e6e8978;
+    margin: 0 1em;
+    border-left: 8px solid black;
+    font-family: 'Poppins';
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 500ms ease;
+}
+
+.right .accordian .accordian-item .bottom p{
+    padding: 10px;
+}
+
+.right .accordian-item:target .bottom{
+    max-height: 20em;
+}
+
+.right .accordian-item:target .top .fa-minus{
+    display: initial;
+}
+.right .accordian-item:target .top .fa-plus{
+    display: none;
+}
