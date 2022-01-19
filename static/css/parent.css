@@ -6,12 +6,13 @@
 
 
 /* ---------------- FONTS ------------------
-font-family: 'Abril Fatface', cursive;
-font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Libre Baskerville', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Raleway', sans-serif; 
-font-family: 'Teko', sans-serif;*/
+font-family: 'Teko', sans-serif;
+font-family: 'Poppins'
+*/
 
 :root{
     --light: #dad5c7;
