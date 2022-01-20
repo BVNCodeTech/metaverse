@@ -249,7 +249,7 @@ header{
 .join .text{
     width: 600px;
     font-family: 'Montserrat';
-    color: grey;
+    color: #ffffffa1;
 }
 
 .join .text .title{
@@ -264,16 +264,18 @@ header{
 .join .star-design{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 60%;
     padding: 5% 0;
 }
 
 .join .star-design img{
-    width: 40%; 
+    width: 60%; 
 }
-.join .star-design .second, .join .star-design .third{
-    margin-left: -15%;
+.join .star-design .first{
+    width: 30%;
+    align-self: end;
+    height: 100%;
+    margin-right: -5%;
 }
 
 /* --------- Team carousel ------------ */
