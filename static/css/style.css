@@ -27,25 +27,6 @@ header{
     padding: 0 1em;
 }
 
-.head .star-design{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 3em;
-    padding: 3em 0;
-    position: relative;
-    top: 25%;
-}
-
-    
-.head .star-design img{
-    width: 40%; 
-}
-.head .star-design .second, .head .star-design .third{
-    margin-left: -15%;
-}
-
 .head .text{
     margin-bottom: 1em;
 }
@@ -253,6 +234,48 @@ header{
     color: #000000ab;
 }
 
+/* ----------- Join ----------- */
+.join{
+    background-color: var(--black);
+}
+
+.join{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.join .text{
+    width: 600px;
+    font-family: 'Montserrat';
+    color: grey;
+}
+
+.join .text .title{
+    font-size: 50px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    line-height: 90%;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.join .star-design{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 5% 0;
+}
+
+.join .star-design img{
+    width: 40%; 
+}
+.join .star-design .second, .join .star-design .third{
+    margin-left: -15%;
+}
+
 /* --------- Team carousel ------------ */
 .team{
     display: flex;
@@ -264,7 +287,7 @@ header{
 
 .team .team-title{
     font-family: 'Poppins';
-    font-size: 10em;
+    font-size: 8em;
     font-weight: bold;
     color: #00000081;
     margin-bottom: 20px;
@@ -306,4 +329,102 @@ header{
     font-family: 'Libre Baskerville', serif;
     font-size: 15px;
     letter-spacing: 2px;
+}
+
+/*  ------------- Footer --------------- */
+footer{
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+footer .container{
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .links{width: 30%;}
+footer .container .links ul{
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .links ul a{
+    font-family: 'Poppins';
+    font-size: 2em;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    transition: all .2s;
+}
+footer a:hover{
+    color: rgba(255, 255, 255, 0.548);
+}
+
+footer .right{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .right .social-links ul{
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+footer .email-input{
+    width: 350px;
+    max-width: 90%;
+    color: black;
+    text-align: left;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px 0px 10px 20px;
+    font-size: 15px;
+}
+
+footer .email-input:focus, .email-input:hover{
+    outline: 0px;
+}
+
+footer .subscribe-btn{
+    border: 0px;
+    width: 150px;
+    max-width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(42 42 42);
+    cursor: pointer;
+    border-radius: 5px;
+    outline: 0;
+    transition: all .2s;
+}
+
+footer .subscribe-btn:hover{
+    background: rgb(75, 74, 74);
+}
+
+.copyrights{
+    font-family: 'Poppins';
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    background-color: black;
+    color: white;
 }
