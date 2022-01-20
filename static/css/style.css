@@ -1,13 +1,20 @@
 header{
-    border: 1px solid black;
-    background-image: url('../images/edited.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    /* background-image: url('../images/edited.png'); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* height: 100vh; */
+    position: relative;
     color: white;
 }
 
+header .header-bg{
+    width: 100%;
+    object-fit: contain;
+}
 .head{
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     width: 100%;
     height: 100%;
@@ -24,7 +31,7 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 1em;
+    padding: 0 2em;
 }
 
 .head .text{
@@ -39,6 +46,7 @@ header{
     text-transform: uppercase;
     display: inline-block;
     border-bottom: 3px solid white;
+    max-width: 80%;
 }
 
 .head .text .subtitle{
@@ -75,15 +83,15 @@ header{
 }
 
 .head .right .mid{
-    height: 70%;
+    height: 80%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 
 .head ul{
-    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -93,6 +101,7 @@ header{
 .head .social-icons i{
     color: white;
     font-size: 1.5em;
+    margin: 20px 0;
 }
 
 .head .bottom{
@@ -158,7 +167,7 @@ header{
 
 .path .path-item .left{
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
     font-family: 'Poppins';
     padding: 3em;
@@ -187,7 +196,7 @@ header{
     background-color: #0000003b;
 }
 
-.path .path-btn{
+.btn{
     background-color: var(--blue);
     border-radius: 25px;
     color: white;
@@ -195,6 +204,7 @@ header{
     padding: 5px 40px;
     display: inline-block;
     text-align: center;
+    font-family: 'Poppins';
 }
 
 .path .number{
@@ -278,6 +288,10 @@ header{
     margin-right: -5%;
 }
 
+.join .path-btn{
+    margin-top: 1em;
+    font-weight: bold;
+}
 /* --------- Team carousel ------------ */
 .team{
     display: flex;
@@ -429,4 +443,69 @@ footer .subscribe-btn:hover{
     font-size: 16px;
     background-color: black;
     color: white;
+}
+
+@media all and (max-width: 1500px){
+    .head .left{width: 40%;}
+    .head .mid{
+        width: 55%;
+    }
+    .head .text .title h1{font-size: 2em;}
+}
+
+@media all and (max-width: 1060px){
+    .head .right{
+        width: 10%;
+        padding-top: 1em;
+    }
+    .head .mid{
+        width: 50%;
+    }
+    .head .text .subtitle, .head .text .title h1{width: 100%;}
+    .head .social-icons i{
+        margin: 10px 0;
+    }
+}
+
+@media all and (max-width: 860px){
+    .head .text {
+        font-size: 75%;
+    }
+    .head .social-icons i{
+        font-size: 1em;
+    }
+    .ham-line {
+        width: 30px;
+        margin: 3px 0;
+    }
+    .path .path-item .left{font-size: 75%;}
+    .path .number{font-size: 6em;}
+    .path .path-title {
+        padding: 100px 0;
+    }
+}
+
+@media all and (max-width: 600px){
+    .head .text {
+        font-size: 50%;
+    }
+    .path .path-item .left{font-size: 60%;}
+    .path .number{font-size: 3.5em;}
+}
+
+@media (max-width: 500px){
+    .head .social-icons i {
+        margin: 5px 0;
+        font-size: 0.7em;
+    }
+    .ham-line{
+        margin: 2px 0;
+        width: 20px;
+    }
+    .btn{padding: 5px 25px;}
+    .menu .container ul li a, .path .path-item .left .title{font-size: 3em;}
+    .head .text .title h1 {
+        font-size: 1.5em;
+    }
+
 }
