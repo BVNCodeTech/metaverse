@@ -288,7 +288,7 @@ header .header-bg{
     margin-right: -5%;
 }
 
-.join .path-btn{
+.join .btn{
     margin-top: 1em;
     font-weight: bold;
 }
@@ -298,7 +298,7 @@ header .header-bg{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    padding: 5% 0;
 }
 
 .team .team-title{
@@ -311,10 +311,12 @@ header .header-bg{
 
 .team-carousel{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .team-carousel .member{
-    margin: 0 2em;
+    margin: 2em;
     box-shadow: 0 20px 60px 0 rgb(0 0 0 / 15%);
 }
 
@@ -345,6 +347,16 @@ header .header-bg{
     font-family: 'Libre Baskerville', serif;
     font-size: 15px;
     letter-spacing: 2px;
+}
+
+.team-carousel .member .text .links ul{
+    display: flex;
+    justify-content: center;
+}
+
+.team-carousel .member .text .links i{
+    font-size: 1.5em;
+    margin: 20px 10px 0 10px;
 }
 
 /*  ------------- Footer --------------- */
@@ -380,6 +392,7 @@ footer .links ul a{
 footer a{
     color: white;
     transition: all .2s;
+    margin: 0 20px;
 }
 footer a:hover{
     color: rgba(255, 255, 255, 0.548);
@@ -394,7 +407,6 @@ footer .right{
 }
 
 footer .right .social-links ul{
-    width: 300px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -445,12 +457,25 @@ footer .subscribe-btn:hover{
     color: white;
 }
 
+.newsletter{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 10px;
+}
+
 @media all and (max-width: 1500px){
     .head .left{width: 40%;}
     .head .mid{
         width: 55%;
     }
     .head .text .title h1{font-size: 2em;}
+}
+
+@media all and (max-width:1300px){
+    .join .text .title{font-size: 35px;}
+    .join .text{width: 500px;}
 }
 
 @media all and (max-width: 1060px){
@@ -464,6 +489,15 @@ footer .subscribe-btn:hover{
     .head .text .subtitle, .head .text .title h1{width: 100%;}
     .head .social-icons i{
         margin: 10px 0;
+    }
+    .join .text {
+        font-size: 80%;
+        width: 400px;
+    }
+    .team .team-title{font-size: 6em;}
+    footer .email-input {
+        width: 250px;
+        margin-bottom: 1em;
     }
 }
 
@@ -483,6 +517,42 @@ footer .subscribe-btn:hover{
     .path .path-title {
         padding: 100px 0;
     }
+    .join {
+        flex-direction: column;
+        padding: 10%;
+    }
+    .join .star-design{width: 100%;}
+    .team-carousel .member {
+        margin: 1em;
+        width: 215px;
+    }
+    .team-carousel .member .img-container{
+        width: 215px;
+        height: 215px;
+    }
+    .team .team-title {
+        font-size: 5em;
+    }
+    footer .right .social-links ul{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    footer form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container .links ul{align-items: flex-start;}
+    footer .container .links ul a{text-align: start;}
+    footer .container .links {
+        width: 50%;
+    }
+    footer a{
+        margin: 0 10px;
+    }
+    footer .right {
+        width: auto;
+    }
 }
 
 @media all and (max-width: 600px){
@@ -491,6 +561,23 @@ footer .subscribe-btn:hover{
     }
     .path .path-item .left{font-size: 60%;}
     .path .number{font-size: 3.5em;}
+    .team .team-title {
+        font-size: 3em;
+    }
+    footer .links ul a{font-size: 1.5em;}
+    .newsletter{font-size: 1em;}
+    footer .email-input{
+        padding: 5px 0px 5px 20px;
+        font-size: 12px;
+    }
+    footer .social-icons i{font-size: 0.8em;}
+    footer .container .links ul a{font-size: 1.2em;}
+    footer .subscribe-btn {
+        padding: 5px;
+        font-size: 14px;
+    }
+    footer{padding: 4% 0;}
+    footer .container .links ul a{font-size: 1em;}
 }
 
 @media (max-width: 500px){
@@ -507,5 +594,10 @@ footer .subscribe-btn:hover{
     .head .text .title h1 {
         font-size: 1.5em;
     }
-
+    .join {
+        padding: 10% 5%;
+    }
+    .join .text{width: auto;}
+    .team{    padding: 10% 0;}
+    .contact{font-size: 80%;}
 }
