@@ -106,7 +106,6 @@ header .social-icons i:hover{
 
 .products .product .image-section{
     width: 1000px;
-    height: 600px;
     background: var(--light);
     display: flex;
     justify-content: center;
@@ -134,7 +133,8 @@ header .social-icons i:hover{
 
 .products .product .text-section{
     position: relative;
-    padding: 20px 40px;
+    padding: 10% 40px;
+    width: 100%;
     font-family: 'Poppins';
     background-color: #262626;
     color: white;

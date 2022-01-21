@@ -90,6 +90,15 @@ header .header-bg{
     align-items: center;
     padding: 0;
 }
+.logo{
+    width: 100%;
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+}
+.logo img{
+    width: 100%;
+}
 
 .head ul{
     display: flex;
@@ -417,12 +426,13 @@ header .header-bg{
     .team .team-title {
         font-size: 5em;
     }
+    header .header-bg {
+        height: 500px;
+        object-fit: cover;
+    }
 }
 
 @media all and (max-width: 600px){
-    .head .text {
-        font-size: 50%;
-    }
     .path .path-item .left{font-size: 60%;}
     .path .number{font-size: 3.5em;}
     .team .team-title {
@@ -431,10 +441,6 @@ header .header-bg{
 }
 
 @media (max-width: 500px){
-    .head .social-icons i {
-        margin: 5px 0;
-        font-size: 0.7em;
-    }
     .ham-line{
         margin: 2px 0;
         width: 20px;
@@ -450,4 +456,10 @@ header .header-bg{
     .join .text{width: auto;}
     .team{    padding: 10% 0;}
     .contact{font-size: 80%;}
+    .head .mid {
+        width: 60%;
+    }
+    .head .left {
+        width: 30%;
+    }
 }
