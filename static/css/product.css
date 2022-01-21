@@ -1,0 +1,215 @@
+header .left nav{
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid black; */
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+    font-family: 'Poppins';
+}
+
+nav .logo{
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-right: 2em;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: var(--grey);
+    margin: 0 2em;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+header .menu{
+    right: calc(-800px - 100%);
+}
+
+header .right .model-container{
+    width: 800px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dad5c7;
+    z-index: -1;
+}
+
+header .right  .model-container model-viewer{
+    width: 100%;
+    height: 100%;
+}
+
+header .left{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--black);
+    color: white;
+}
+
+header .left .text{
+    max-width: 800px;
+    margin: auto;
+    padding: 0 40px;
+    transform: translateY(-20%);
+}
+
+header .left .text .title{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+header .left .text .desc{
+    font-family: 'Poppins';
+    font-weight: lighter;
+    margin-bottom: 3em;
+}
+
+header .left .social-links ul{
+    display: flex;
+    padding: 1em 2em;
+}
+
+header .social-icons i{
+    font-size: 1.2em;
+    margin: 0 10px;
+    color: white;
+}
+
+/* --------- Products Section --------------- */
+.products{padding: 5% 0;}
+.products .product{
+    display: flex;
+    padding: 5%;
+}
+
+.products .product .image-section{
+    width: 1000px;
+    height: 600px;
+    background: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.products .product .image-section .img-container{
+    position: relative;
+}
+
+.products .product .image-section .number{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.486);
+    font-size: 4em;
+    font-family: 'poppins';
+}
+
+.products .product .image-section img{
+    width: 100%;
+}
+
+.products .product .text-section{
+    position: relative;
+    padding: 20px 40px;
+    font-family: 'Poppins';
+    background-color: #262626;
+    color: white;
+}
+
+.products .product .text-section .text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .product .text-section .price{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 4em;
+    font-family: 'Libre Baskerville', serif;
+    color: grey;
+}
+
+.products .headset .price, .products .pen .price{
+    text-align: end;
+}
+
+.products .glasses .price{
+    text-align: start;
+}
+.products .product .text-section .title{
+    font-size: 3em;
+}
+
+.products .product .text-section .desc{
+    width: 80%;
+    margin: 1em auto;
+}
+
+.products .text-design h1{
+    font-size: 160px;
+    padding: 50px 0;
+    font-family: 'Libre Baskerville', serif;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--black);
+    white-space: nowrap;
+    animation: infiniteText 6s linear infinite;
+}
+
+@keyframes infiniteText{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+@media all and (max-width: 1300px){
+    header .right .model-container{width: 500px;}
+}
+
+@media all and (max-height: 750px){
+    header .left .text{transform: translateY(0);}
+}
+
+@media all and (max-width: 1000px){
+    header .left .text{transform: translateY(0);}
+}
+
+@media all and (max-width:700px){
+    header{flex-direction: column;}
+    header .right .model-container{width: 100vw;}
+    header .left{height: auto;}
+    header .left .text{
+        margin: 4em 0;
+        font-size: 80%;
+    }
+    header .left nav{
+        width: 100%;
+        justify-content: space-around;
+    }
+}

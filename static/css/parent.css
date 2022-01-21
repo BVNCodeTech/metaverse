@@ -147,3 +147,168 @@ text-decoration: none;}
     position: absolute;
     transform: rotate(-45deg);
 }
+
+.btn{
+    background-color: var(--blue);
+    border-radius: 25px;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px 40px;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+/*  ------------- Footer --------------- */
+footer{
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+footer .container{
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .links{width: 30%;}
+footer .container .links ul{
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .links ul a{
+    font-family: 'Poppins';
+    font-size: 2em;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    transition: all .2s;
+    margin: 0 20px;
+}
+footer a:hover{
+    color: rgba(255, 255, 255, 0.548);
+}
+
+footer .right{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .right .social-links ul{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+footer .email-input{
+    width: 350px;
+    max-width: 90%;
+    color: black;
+    text-align: left;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px 0px 10px 20px;
+    font-size: 15px;
+}
+
+footer .email-input:focus, .email-input:hover{
+    outline: 0px;
+}
+
+footer .subscribe-btn{
+    border: 0px;
+    width: 150px;
+    max-width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(42 42 42);
+    cursor: pointer;
+    border-radius: 5px;
+    outline: 0;
+    transition: all .2s;
+}
+
+footer .subscribe-btn:hover{
+    background: rgb(75, 74, 74);
+}
+
+.copyrights{
+    font-family: 'Poppins';
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+
+.newsletter{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+@media all and (max-width: 1060px){
+    footer .email-input {
+        width: 250px;
+        margin-bottom: 1em;
+    }
+}
+
+@media all and (max-width: 860px){
+    footer .right .social-links ul{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    footer form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container .links ul{align-items: flex-start;}
+    footer .container .links ul a{text-align: start;}
+    footer .container .links {
+        width: 50%;
+    }
+    footer a{
+        margin: 0 10px;
+    }
+    footer .right {
+        width: auto;
+    }
+}
+
+@media all and (max-width: 600px){
+    footer .links ul a{font-size: 1.5em;}
+    .newsletter{font-size: 1em;}
+    footer .email-input{
+        padding: 5px 0px 5px 20px;
+        font-size: 12px;
+    }
+    footer .social-icons i{font-size: 0.8em;}
+    footer .container .links ul a{font-size: 1.2em;}
+    footer .subscribe-btn {
+        padding: 5px;
+        font-size: 14px;
+    }
+    footer{padding: 4% 0;}
+    footer .container .links ul a{font-size: 1em;}
+    .menu .container ul li a{font-size: 3em;}
+}

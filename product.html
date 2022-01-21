@@ -7,48 +7,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./static/css/parent.css">
-    <link rel="stylesheet" href="./static/css/exploration.css">
+    <link rel="stylesheet" href="./static/css/product.css">
+    <link rel="stylesheet" href="./static/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Semi+Condensed&family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;700&family=Raleway&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <div class="logo">Logo</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="">Exploration</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">FAQs</a></li>
-            <li><a href="">Join</a></li>
-            <li>
-                <div class="hamburger">
-                    <div class="ham-line"></div>
-                    <div class="ham-line"></div>
-                    <div class="ham-line"></div>
+    <div class="main">
+        <header>
+            <div class="left">
+                <nav>
+                    <div class="logo">Logo</div>
+                    <ul>
+                        <!-- <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="exploration.html">Exploration</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="faqs.html">FAQs</a></li> -->
+                        <li>
+                            <div class="hamburger">
+                                <div class="ham-line"></div>
+                                <div class="ham-line"></div>
+                                <div class="ham-line"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu">
+                    <div class="container">
+                        <ul>
+                            <li><a href="index.html" data-text="Home">Home</a></li>
+                            <li><a href="about.html" data-text="About">About</a></li>
+                            <li><a href="exploration.html" data-text="Exploration">Exploration</a></li>
+                            <li><a href="#" data-text="Products">Products</a></li>
+                            <li><a href="faqs.html" data-text="FAQs">FAQs</a></li>
+                        </ul>
+                        <div class="close-ham">
+                            <div class="close-ham-line ham-line"></div>
+                            <div class="close-ham-line ham-line"></div>
+                        </div>
+                    </div>
                 </div>
-            </li>
-        </ul>
-    </nav>
-    <div class="menu">
-        <div class="container">
-            <ul>
-                <li><a href="index.html" data-text="Home">Home</a></li>
-                <li><a href="about.html" data-text="About">About</a></li>
-                <li><a href="#" data-text="Exploration">Exploration</a></li>
-                <li><a href="product.html" data-text="Products">Products</a></li>
-                <li><a href="faqs.html" data-text="FAQs">FAQs</a></li>
-            </ul>
-            <div class="close-ham">
-                <div class="close-ham-line ham-line"></div>
-                <div class="close-ham-line ham-line"></div>
+                <div class="text">
+                    <div class="title">Our Products</div>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa porro doloribus
+                        nihil voluptatem? Praesentium ex dolores, et laudantium sed nihil, itaque tenetur, veritatis
+                        maiores debitis possimus! Perspiciatis ipsam molestias illum.</div>
+                    <div class="btn">Learn more!</div>
+                </div>
+                <div class="social-links">
+                    <ul>
+                        <li class="social-icons"><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li class="social-icons"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="social-icons"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="social-icons"><a href=""><i class="fas fa-newspaper"></i></a></li>
+                    </ul>
+                </div>
             </div>
+            <div class="right">
+                <div class="model-container">
+                    <model-viewer src="./static/images/vr headset wearing.glb" alt="model robot" auto-rotate
+                        camera-controls ar camera-orbit="45deg 55deg 2.5m" ios-src="assets/Drossel.gltf"></model-viewer>
+                </div>
+            </div>
+        </header>
+
+        <section class="products">
+            <!-- <div class="text-design headset-text">
+                <h1>VR Headset VR Headset VR Headset VR Headset</h1>
+            </div> -->
+            <div class="product headset">
+                <div class="image-section">
+                    <div class="img-container">
+                        <img src="./static/images/path2.jpg" alt="">
+                        <div class="number">01</div>
+                    </div>
+                </div>
+                <div class="text-section">
+                    <div class="text">
+                        <div class="price">300$</div>
+                        <div class="title">VR Headset</div>
+                        <div class="desc">
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex blanditiis ducimus
+                                repudiandae error illum maxime perspiciatis quae. A minima corporis, suscipit labore,
+                                hic commodi laborum quos nisi nesciunt, repudiandae non?</div>
+                            <div>ipsum dolor sit amet consectetur adipisicing elit. Ratione, sunt voluptatem, rem
+                                maiores quidem accusamus excepturi animi molestias porro exercitationem quibusdam
+                                consequatur tempora labore debitis similique unde quo repellat maxime?</div>
+                        </div>
+                        <div class="btn">Buy now!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product glasses">
+                <div class="text-section">
+                    <div class="text">
+                        <div class="price">200$</div>
+                        <div class="title">AR Smart glasses</div>
+                        <div class="desc">
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex blanditiis ducimus
+                                repudiandae error illum maxime perspiciatis quae. A minima corporis, suscipit labore,
+                                hic commodi laborum quos nisi nesciunt, repudiandae non?</div>
+                            <div>ipsum dolor sit amet consectetur adipisicing elit. Ratione, sunt voluptatem, rem
+                                maiores quidem accusamus excepturi animi molestias porro exercitationem quibusdam
+                                consequatur tempora labore debitis similique unde quo repellat maxime?</div>
+                        </div>
+                        <div class="btn">Buy now!</div>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <div class="img-container">
+                        <img src="./static/images/path3.jpg" alt="">
+                        <div class="number">02</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product pen">
+                <div class="image-section">
+                    <div class="img-container">
+                        <img src="./static/images/path1.jpg" alt="">
+                        <div class="number">03</div>
+                    </div>
+                </div>
+                <div class="text-section">
+                    <div class="text">
+                        <div class="price">50$</div>
+                        <div class="title">Hand tracking pen</div>
+                        <div class="desc">
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex blanditiis ducimus
+                                repudiandae error illum maxime perspiciatis quae. A minima corporis, suscipit labore,
+                                hic commodi laborum quos nisi nesciunt, repudiandae non?</div>
+                            <div>ipsum dolor sit amet consectetur adipisicing elit. Ratione, sunt voluptatem, rem
+                                maiores quidem accusamus excepturi animi molestias porro exercitationem quibusdam
+                                consequatur tempora labore debitis similique unde quo repellat maxime?</div>
+                        </div>
+                        <div class="btn">Buy now!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="links">
+                    <ul>
+                        <li><a href="#" data-text="Home">Home</a></li>
+                        <li><a href="about.html" data-text="About">About</a></li>
+                        <li><a href="exploration.html" data-text="Exploration">Exploration</a></li>
+                        <li><a href="product.html" data-text="Products">Products</a></li>
+                        <li><a href="faqs.html" data-text="FAQs">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="social-links">
+                        <ul>
+                            <li class="social-icons"><a href=""><i class="fab fa-facebook"></i></a></li>
+                            <li class="social-icons"><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li class="social-icons"><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li class="social-icons"><a href=""><i class="fas fa-newspaper"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <div class="newsletter">
+                            Get Weekly Updates From Us
+                        </div>
+                        <form action="#">
+                            <input type="text" placeholder="Enter Your Email Address" class="email-input">
+                            <input type="submit" value="Subscribe" class="subscribe-btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyrights">
+            Indian Wildlife Preservers © 2021 | All Rights Reserved
         </div>
-    </div>
-    <div class="model-container">
-        <model-viewer src="./static/images/vr headset wearing.glb" alt="model robot" auto-rotate camera-controls ar
-        ios-src="assets/Drossel.gltf"></model-viewer>
+        
     </div>
 </body>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script src="./static/js/main.js"></script>
+
 </html>
