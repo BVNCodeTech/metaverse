@@ -101,7 +101,8 @@ header .social-icons i:hover{
 .products{padding: 5% 0;}
 .products .product{
     display: flex;
-    padding: 5%;
+    margin: 10%;
+    box-shadow: 0 20px 80px 0 rgb(0 0 0 / 45%);
 }
 
 .products .product .image-section{

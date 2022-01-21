@@ -31,9 +31,10 @@ nav ul{
 }
 
 nav ul a{
-    color: var(--grey);
     margin: 0 2em;
 }
+
+nav ul a:hover{color: var(--blue);}
 .model-container{
     position: absolute;
     top: 0;
@@ -44,7 +45,8 @@ nav ul a{
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    background-color: #dad5c7;
+    background: url('../images/radiant-gradient.svg');
+    /* background-color: #dad5c7; */
     z-index: -1;
 }
 
