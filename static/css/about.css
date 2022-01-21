@@ -57,6 +57,7 @@ nav .closed-menu ul li{
 header{
     height: 80vh;
     display: flex;
+    border-bottom: 2px solid #00000029;
 }
 
 header .left{
