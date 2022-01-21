@@ -22,10 +22,24 @@ nav{
 nav .closed-menu li a{
     color: var(--grey);
 }
+nav .closed-menu li a:hover{
+    color: black;
+}
 
 nav .logo{
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-size: 1.5em;
+    margin: 0 1em;
+}
+
+nav .logo-container{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo-container img{
+    width: 100px;
 }
 
 nav .closed-menu ul{
@@ -93,6 +107,7 @@ header .left .text .subtitle{
     color: var(--grey);
 }
 
+.social-links .social-icons i:hover{color: black;}
 /* ----------- Accordian ------------ */
 .right{
     height: 90%;

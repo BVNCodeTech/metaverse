@@ -9,11 +9,21 @@ nav{
 }
 
 nav .logo{
-    font-weight: bold;
-    font-size: 2em;
-    letter-spacing: 3px;
     text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+    margin: 0 1em;
 }
+
+nav .logo-container{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo-container img{
+    width: 100px;
+}
+
 
 nav ul{
     display: flex;

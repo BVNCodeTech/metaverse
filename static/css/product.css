@@ -93,6 +93,10 @@ header .social-icons i{
     color: white;
 }
 
+header .social-icons i:hover{
+    color: rgba(255, 255, 255, 0.568);
+}
+
 /* --------- Products Section --------------- */
 .products{padding: 5% 0;}
 .products .product{
