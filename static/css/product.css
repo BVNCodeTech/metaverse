@@ -184,14 +184,14 @@ header .social-icons i:hover{
     animation: infiniteText 6s linear infinite;
 }
 
-@keyframes infiniteText{
+/* @keyframes infiniteText{
     0%{
         transform: translateX(0);
     }
     100%{
         transform: translateX(-50%);
     }
-}
+} */
 
 @media all and (max-width: 1300px){
     header .right .model-container{width: 500px;}
