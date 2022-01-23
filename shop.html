@@ -1,1 +1,174 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./static/css/all.min.css">
+    <link rel="stylesheet" href="./static/css/parent.css">
+    <link rel="stylesheet" href="./static/css/shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat&family=Playfair+Display:wght@400;800&family=Poppins:wght@400;700&family=Raleway&family=Teko:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="navbar">
+                <div class="logo">Metaversity</div>
+                <div class="hamburger">
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="container">
+                    <ul>
+                        <li><a href="index.html" data-text="Home">Home</a></li>
+                        <li><a href="about.html" data-text="About">About</a></li>
+                        <li><a href="exploration.html" data-text="Exploration">Exploration</a></li>
+                        <li><a href="#" data-text="Products">Products</a></li>
+                        <li><a href="faqs.html" data-text="FAQs">FAQs</a></li>
+                    </ul>
+                    <div class="close-ham">
+                        <div class="close-ham-line ham-line"></div>
+                        <div class="close-ham-line ham-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-text">
+                <div class="title">Shop Now!</div>
+                <div class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima consequatur nihil perspiciatis alias ex numquam praesentium, quidem quia aliquam repellat illum, atque enim odio quo magni qui natus laboriosam minus!</div>
+            </div>
+            <div id="vanta-container"></div>
+        </header>
+        <!-- <div class="products-heading">Products</div> -->
+        <section class="products">
+            <div class="product">
+                <div class="img-container">
+                    <img src="./static/images/headset.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="name">Meta Cosmos</div>
+                    <div class="price">300$</div>
+                    <div class="buy">Add to wishlist</div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="./static/images/glasses.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <div class="name">Pixelens</div>
+                    <div class="price">200$</div>
+                    <div class="buy">Add to wishlist</div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="./static/images/pen.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="name">Whiteboard pen</div>
+                    <div class="price">50$</div>
+                    <div class="buy">Add to wishlist</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="avatars">
+            <div class="avatar-grid">
+                <div class="avatar">
+                    <div class="img-container">
+                        <img src="./static/images/piggy.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">Avatar Piggy</div>
+                        <div class="like">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="avatar">
+                    <div class="img-container">
+                        <img src="./static/images/piggy2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">Avatar Piggy</div>
+                        <div class="like">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="avatar">
+                    <div class="img-container">
+                        <img src="./static/images/piggy.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">Avatar Piggy</div>
+                        <div class="like">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="avatar">
+                    <div class="img-container">
+                        <img src="./static/images/piggy2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">Avatar Piggy</div>
+                        <div class="like">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="avatar">
+                    <div class="img-container">
+                        <img src="./static/images/piggy.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">Avatar Piggy</div>
+                        <div class="like">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="avatar">
+                    <div class="img-container">
+                        <img src="./static/images/piggy2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">Avatar Piggy</div>
+                        <div class="like">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="./static/js/main.js"></script>
+<script src="./static/js/three.min.js"></script>
+<script src="./static/js/vanta.waves.min.js"></script>
+<script>
+VANTA.WAVES({
+  el: "#vanta-container",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: '#051d41'
+})
+</script>
+    
+</html>
