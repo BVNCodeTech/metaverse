@@ -18,3 +18,12 @@ function hide(){
 document.onscroll = function(){
     document.querySelector('.navbar').classList.add('active');
 };
+
+var cart_btn = document.querySelector('.cart-btn');
+var cart = document.querySelector('.cart');
+var body = document.querySelector('.main');
+
+cart_btn.onclick = function(){
+    cart.classList.toggle('active');
+    body.classList.toggle('path-active');
+};

@@ -146,8 +146,139 @@ header .header-text .desc{
     color: rgb(240, 33, 33);
 }
 
+/* ----------------- CART -------------- */
+.cart{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    top: 0vh;
+    left: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1d2e49;
+    padding: 10% 5%;
+    transition: all 1s ease ;
+}
+
+.cart.active{
+    left: 0;
+}
+
+.main.path-active{
+    overflow: hidden;
+}
+
+.cart .inner-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cart .inner-grid .cart-products{
+    border-right: 1px solid #80808087;
+    border-left: 1px solid #80808087;
+    padding: 5% 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart .heading{
+    margin: 0 10px 1em 10px;
+    font-size: 3em;
+    font-family: 'Poppins';
+    border-bottom: 2px solid white;
+}
+
+.cart .cart-products .products-box .product{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    border-bottom: 1px solid grey;
+    margin: 1em 0;
+}
+
+.cart .cart-products .product .name, .cart .avatars .avatar .name{
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+}
+
+.cart .product .quantity{
+    display: flex;
+}
+
+.cart .product .quantity-button button{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.cart .product .quantity-button i{
+    font-size: 1em;
+    color: white;
+}
+
+.cart .product .quantitiy-field{
+    margin: 0 1em;
+    width: 50px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.cart .avatars{padding: 5%;}
+.cart .avatars .avatar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: transparent;
+    border-bottom: 1px solid grey;
+    margin: 1em 0;
+}
+
+.cart .text-design{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #80808087;
+    border-left: 1px solid #80808087;
+}
+
+.cart .text-design h1{
+    font-size: 5em;
+    color: grey;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    margin-top: -10px;
+}
+
+.cart-btn{
+    position: fixed;
+    bottom: 50px;
+    left: 30px;
+    padding: 10px;
+    background: var(--blue);
+    z-index: 2;
+}
+
+@media all and (max-width:1500px){
+    .cart .heading{
+        font-size: 2em;
+    }
+}
+
+@media all and (max-width:1250px){
+    .cart .inner-grid{grid-template-columns: 2fr 2fr 1fr;}
+}
 @media all and (max-width:1000px){
     .avatar-grid .avatar .text{font-size:1em}
+    .cart{padding: 10% 2%;}
+    .cart .product .quantitiy-field {
+        margin: 0 10px;
+        width: 30px;
+    }
 }
 @media all and (max-width: 850px){
     header .header-text{
@@ -155,6 +286,14 @@ header .header-text .desc{
     }
     header .header-text .title{font-size: 3em;}
     .avatars .avatar-grid{grid-template-columns: 1fr 1fr;}
+    .cart .inner-grid{grid-template-columns: 1fr 1fr;}
+    .cart .text-design{display: none;}
+    .cart .inner-grid .cart-products{border-left: none;}
+}
+
+@media all and (max-width: 700px){
+    .cart .inner-grid{grid-template-columns: 1fr;}
+    .cart .inner-grid .cart-products{border-right: none;}
 }
 
 @media all and (max-width: 500px){

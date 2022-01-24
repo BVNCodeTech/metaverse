@@ -463,3 +463,7 @@ header .header-bg{
         width: 30%;
     }
 }
+
+@media all and (max-height:700px){
+    .path .outer{width: 65%;}
+}
