@@ -47,9 +47,8 @@ header .right .model-container{
     z-index: -1;
 }
 
-header .right  .model-container model-viewer{
+header .right  .model-container img{
     width: 100%;
-    height: 100%;
 }
 
 header .left{
@@ -128,7 +127,7 @@ header .social-icons i:hover{
     font-family: 'poppins';
 }
 
-.products .product .image-section img{
+.products .product .image-section video{
     width: 100%;
 }
 
