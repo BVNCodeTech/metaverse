@@ -316,4 +316,6 @@ footer .subscribe-btn:hover{
     footer{padding: 4% 0;}
     footer .container .links ul a{font-size: 1em;}
     .menu .container ul li a{font-size: 3em;}
+    footer .right{font-size: 80%;}
+    footer .email-input{width: 200px;}
 }
