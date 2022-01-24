@@ -15,10 +15,16 @@ header .navbar{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
-    width: 100%;
+    z-index: 3;
+    width: 100vw;
     font-family: 'Poppins';
     font-size: 2em;
+    transition: 500ms ease;
+}
+
+.navbar.active{
+    background: var(--black);
+    padding: 40px 80px;
 }
 
 header .header-text{
@@ -102,7 +108,7 @@ header .header-text .desc{
 
 /* ----------- AVATARS --------------- */
 .avatars{
-    padding: 10% 5%;
+    padding: 10%;
 }
 
 .avatars .avatar-grid{
@@ -138,4 +144,24 @@ header .header-text .desc{
 }
 .avatar-grid .avatar .text .like i:hover{
     color: rgb(240, 33, 33);
+}
+
+@media all and (max-width:1000px){
+    .avatar-grid .avatar .text{font-size:1em}
+}
+@media all and (max-width: 850px){
+    header .header-text{
+        width: 60%;
+    }
+    header .header-text .title{font-size: 3em;}
+    .avatars .avatar-grid{grid-template-columns: 1fr 1fr;}
+}
+
+@media all and (max-width: 500px){
+    header .header-text {
+        width: 90%;
+    }
+    header .navbar{font-size: 1.5em;}
+    .avatar-grid .avatar .text{font-size:80%}
+    footer .right{font-size: 80%;}
 }
